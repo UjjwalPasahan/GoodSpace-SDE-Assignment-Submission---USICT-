@@ -1,0 +1,27 @@
+.input-component {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 400px; 
+    transition: border-color 0.3s ease; 
+  
+    &::placeholder {
+      color: #aaa;
+    }
+  
+    &:focus {
+      border-color: #0066ff;
+      box-shadow: 0 0 0 2px rgba(0, 102, 255, 0.1);
+    }
+  
+    @media (max-width: 768px) {
+      min-width: 100% !important;
+    }
+  
+    @media (max-width: 400px) {
+      max-width: 90% !important; 
+    }
+  }
