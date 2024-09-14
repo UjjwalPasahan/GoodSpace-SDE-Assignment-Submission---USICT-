@@ -1,0 +1,84 @@
+.cta-signup {
+    background-color: #E3F0F9;
+    padding: 4rem 1.5rem;
+  
+    &__container {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+  
+    &__title {
+      font-size: 2.5rem;
+      color: #0066ff;
+      margin-bottom: 2rem;
+      font-weight: 600;
+    }
+  
+    &__form {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  
+    &__input {
+      flex: 1;
+      min-width: 200px;
+      padding: 0.75rem 1rem;
+      font-size: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      outline: none;
+  
+      &::placeholder {
+        color: #aaa;
+      }
+  
+      &:focus {
+        border-color: #0066ff;
+      }
+    }
+  
+    &__button {
+      padding: 0.75rem 2rem;
+      font-size: 1rem;
+      background-color: #0066ff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: darken(#0066ff, 10%);
+      }
+    }
+  
+    &__terms {
+      font-size: 0.9rem;
+      color: #666;
+      opacity: 70%;
+      margin-top: 1rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .cta-signup {
+      padding: 3rem 1rem;
+  
+      &__title {
+        font-size: 2rem;
+      }
+  
+      &__form {
+        flex-direction: column;
+      }
+  
+      &__input,
+      &__button {
+        width: 100%;
+      }
+    }
+  }
