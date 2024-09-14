@@ -1,0 +1,27 @@
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 16px;   
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(0deg, #1353DD, #1353DD),
+                linear-gradient(93.69deg, #2D56EC -14.13%, #1AACEA 120.91%);
+    background-blend-mode: overlay;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  
+  @media (max-width: 768px) {
+    .button {
+      width: 100%;
+    }
+  }
+  
