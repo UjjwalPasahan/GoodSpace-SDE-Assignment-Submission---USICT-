@@ -33,7 +33,7 @@ const Features = () => {
               <div className='feature-card__toph'>
                 <div className="feature-card__icon custom-border"><img src={feature.icon} alt="" /></div>
                 <h3 className="feature-card__title">{feature.title}</h3>
-                <h6 className="feature-card__comingSoon">{feature.comingSoon ? <p>coming soon</p>:null}</h6>
+                <h6 className={`${feature.comingSoon?"feature-card__comingSoon":""}`}>{feature.comingSoon ? <p>coming soon</p>:undefined}</h6>
               </div>
               <p className="feature-card__description">{feature.description}</p>
             </div>
