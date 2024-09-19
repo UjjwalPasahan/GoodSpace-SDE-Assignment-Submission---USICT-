@@ -20,7 +20,7 @@ const Navbar = () => {
           <a href="#" className="navbar__link">Pricing</a>
           <a href="#" className="navbar__link">Contact</a>
           <button className="button">
-            Start Trail
+            Start Trial
           </button>
         </div>
         <div className="navbar__toggle" onClick={toggleMenu}>
